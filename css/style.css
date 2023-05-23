@@ -1,0 +1,17 @@
+
+@font-face {font-family: 'Rose';src: url(../fonts/Rose.ttf);}
+@font-face {font-family: 'Gl';src: url(../fonts/zorque.ttf);}
+
+*{margin: 0; padding: 0;box-sizing: border-box;}
+
+body      {background-color: #101010;display: flex;justify-content: center;margin-top: 30px;}
+
+.loader   {position: fixed;width: 100vw;height: 100vh;background-color:  rgb(26, 26, 26);z-index: 140;}
+.spinner  {position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 40px;height: 40px;border: 6px solid rgba(88, 81, 67, 1);animation: animate 1.5s infinite linear;border-radius: 50%;border-top: 6px solid rgba(88, 81, 67, 1);border-bottom: 6px solid #f75f5f;}
+/* canvas    {width: 100vw;height: 100vh;} */
+@keyframes animate{
+
+    0%        {transform: translate(-50%,-50%) rotate(0deg);}
+    100%      {transform: translate(-50%,-50%) rotate(360deg);}
+
+}
